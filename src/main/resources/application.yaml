@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bookstore
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookstore
+    username: postgres
+    password: postdba
+  jpa:
+    hibernate:
+      ddl-auto: update  # Pode ser 'none', 'update', 'create', 'create-drop'
+    show-sql: true  # Exibe as consultas SQL no console
+
+
