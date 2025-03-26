@@ -1,25 +1,27 @@
 package br.com.jlgregorio.bookstore.model;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
 @AllArgsConstructor
-@Getter
+@NoArgsConstructor
 @Setter
+@Getter
 @Entity
-@Table(name = "authors")
-public class Author {
+@Table(name = "genders")
+public class GenderModel {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 30)
     private String name;
 
-    private String country;
-
+    @Column(nullable = false, length = 50)
+    private String description;
 }
