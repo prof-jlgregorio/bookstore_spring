@@ -1,0 +1,17 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /bookstore/api
+spring:
+  application:
+    name: Bookstore
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookstore
+    username: postgres
+    password: postdba
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
