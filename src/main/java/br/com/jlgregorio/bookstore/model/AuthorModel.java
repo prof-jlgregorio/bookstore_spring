@@ -22,5 +22,4 @@ public class AuthorModel {
     private String name;
 
     private String country;
-
 }

@@ -13,5 +13,13 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+springdoc:
+  api-docs:
+    path: /docs
+    pathsToMatch: /api/**
+  swagger-ui:
+    use-root-path: true
+
+
 
 
