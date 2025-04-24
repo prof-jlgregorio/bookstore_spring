@@ -33,4 +33,8 @@ public class BookModel {
     @JoinColumn(name = "author_id", nullable = false)
     private AuthorModel author;
 
+    @Column(name = "year", nullable = false)
+    private int year;
+
+
 }

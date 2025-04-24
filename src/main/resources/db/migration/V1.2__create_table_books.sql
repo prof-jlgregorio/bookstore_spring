@@ -1,6 +1,6 @@
 create table if not exists books (
     id serial,
-    name varchar(50) not null,
+    name varchar(150) not null,
     summary varchar(100) not null,
     author_id bigint not null,
     gender_id bigint not null,

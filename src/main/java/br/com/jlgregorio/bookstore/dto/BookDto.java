@@ -16,9 +16,10 @@ public class BookDto {
     private String summary;
     private GenderDto gender;
     private AuthorDto author;
+    private int year;
 
     public String toString(){
-        return this.name + " - " + this.summary +
+        return this.name + " - " + year + " - " +this.summary +
                 " - " + this.gender + " By: " + this.author;
     }
 
