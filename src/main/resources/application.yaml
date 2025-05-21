@@ -21,6 +21,12 @@ springdoc:
     pathsToMatch: /api/**
   swagger-ui:
     use-root-path: true
+security:
+  jwt:
+    issuer: bookstore2025
+    secret: adsfatecsecret
+    expiration-in-hours: 2
+    time-zone: -03:00
 
 
 

@@ -14,6 +14,6 @@ public class WebConfig implements WebMvcConfigurer {
        registry.addMapping("/**")
                .allowedMethods("POST", "PUT", "GET", "DELETE",
                        "OPTIONS", "HEAD", "TRACE", "CONNECT")
-               .allowedOrigins("http://localhost/bookstore:8888", "http://www.fatecjales.edu.br");
+               .allowedOrigins("*");
     }
 }

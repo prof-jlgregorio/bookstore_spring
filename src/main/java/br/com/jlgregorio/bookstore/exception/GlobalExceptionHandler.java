@@ -31,6 +31,22 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
     }
 
+    @ExceptionHandler(DuplicatedUserNameException.class)
+    public final ResponseEntity<CustomExceptionResponse>
+    handleDuplicatedUserNameException(Exception e, WebRequest request){
+        CustomExceptionResponse response = new CustomExceptionResponse(new Date(),
+                e.getMessage(), request.getDescription(false));
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(InvalidJwtAuthenticationException.class)
+    public final ResponseEntity<CustomExceptionResponse>
+    handleInvalidJwtAuthenticationException(Exception e, WebRequest request){
+        CustomExceptionResponse response = new CustomExceptionResponse(new Date(),
+                e.getMessage(), request.getDescription(false));
+        return new ResponseEntity<>(response, HttpStatus.FORBIDDEN);
+    }
+
 
 
 
