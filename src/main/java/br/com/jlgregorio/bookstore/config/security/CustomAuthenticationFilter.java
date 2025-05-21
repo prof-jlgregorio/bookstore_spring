@@ -26,6 +26,9 @@ public class CustomAuthenticationFilter extends OncePerRequestFilter {
         String token = tokenProvider.getTokenFromHttpRequest(request);
         String path = request.getRequestURI();
         System.out.println("URI Requisitado:::" + path);
+
+
+
         if (token != null && tokenProvider.isTokenValid(token)) {
             Authentication auth = tokenProvider.getAuthentication(token);
             if (auth != null) {
