@@ -59,6 +59,18 @@ public class UserModel implements UserDetails {
             return List.of(new SimpleGrantedAuthority("USER"));
         }
 
+        /*
+        * if(role == RoleModel.ADMIN){
+            return List.of(new SimpleGrantedAuthority("ADMIN"), new SimpleGrantedAuthority("USER"), new SimpleGrantedAuthority("SELLER"), new SimpleGrantedAuthority("DELIVERYMAN"));
+        } else if (role == RoleModel.USUARIO){
+            return List.of(new SimpleGrantedAuthority("USER"), new SimpleGrantedAuthority("SELLER"), new SimpleGrantedAuthority("DELIVERYMAN"));
+        } else if(role == RoleModel.VENDEDOR) {
+            return List.of(new SimpleGrantedAuthority("SELLER"));
+        } else {
+            return List.of(new SimpleGrantedAuthority("DELIVERYMAN"));
+        }
+        * */
+
     }
 
     @Override

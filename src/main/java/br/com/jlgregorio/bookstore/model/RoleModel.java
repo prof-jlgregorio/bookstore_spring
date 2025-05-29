@@ -2,7 +2,7 @@ package br.com.jlgregorio.bookstore.model;
 
 public enum RoleModel {
 
-    ADMIN("admin"), USER("user");
+    ADMIN("ADMIN"), USER("ADMIN");
 
     private String name;
 

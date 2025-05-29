@@ -18,7 +18,7 @@ import javax.print.attribute.standard.Media;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/authors")
+@RequestMapping("/authors")
 @Tag(name = "Authors", description = "Operações relacionadas à entidade Author.")
 public class AuthorController {
 
